@@ -18,7 +18,7 @@
 
  
 
-let studentScore = 80;
+let studentScore = 15;
 let maxScore = 100;
 
 let scorePercentage = (studentScore/maxScore)*100;
@@ -34,8 +34,8 @@ if(scorePercentage >= 91){
 } else if ((scorePercentage >= 51) && (scorePercentage <= 60.99)){
     console.log(`Student score -> ${scorePercentage} % -> Grade-E`);
 } else if ((scorePercentage >= 51) && (scorePercentage < 51)){
-    
-}
+    console.log(`Student score -> ${scorePercentage} % -> Grade-F`);
+} else {console.log(`invalid score`)}
 
 
 

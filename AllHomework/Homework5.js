@@ -5,13 +5,26 @@
  * Convert any sentence into Titlecase
  */
 
+ let sent1 = 'yOU lIve onLy Once';
+ let senArr = sent1.toLowerCase().split(' ');
+ let sen1TitleCase = '';
+ 
+ for (let index = 0; index <= senArr.length - 1; index++) {
+ let titleCase = senArr[index].charAt(0).toUpperCase() + senArr[index].slice(1);
+   sen1TitleCase = sen1TitleCase.concat(titleCase + " ");
+   console.log(sen1TitleCase);
+ }
+ 
+ console.log(sen1TitleCase);
+
  let sentence = 'I need a beer';
  let sentence_arr = sentence.toLowerCase().split(' ');
  let titleCase = '';
 
  for (let index = 0 ; index <= sentence_arr.length-1 ; index++){
-    let titleCase = sentence_arr[index].charAt(0).toUpperCase() + sentence_arr[index].slice(1) + ''
-    console.log(titleCase);
+    let titleCase = sentence_arr[index].charAt(0).toUpperCase() + sentence_arr[index].slice(1)
+    let titleCase = titleCase.concat(titleCase + " ")
+    console.log(titleCase)
    
  }
 
@@ -39,6 +52,23 @@ for (let index = sent1_arr.length-1 ; index >= 0 ; index--) {
     
 }
 console.log(sentence2)
+
+
+let sen1 = 'coding is really fun';
+let sen1Arr = sen1.split(' ');
+let sen2 = '';
+for(let index = sen1Arr.length - 1; index >= 0; index--) {
+ sen2 = sen2 + ' ' + sen1Arr[index];
+}
+console.log(sen2);
+
+
+
+
+
+
+
+
 
 /**
  * Q3:

@@ -1,0 +1,61 @@
+// 1.)
+
+const sentence1 = `Hello dear, how are you doing?`;
+let result1 = 0;
+
+let lengthOfSentence = sentence1.length;
+if(lengthOfSentence>10) {
+    result1 = 15;
+} else{
+    result1 = 25;
+
+
+}
+console.log(result1);
+
+// 2.)
+
+let sentence = `HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.`;
+let sentence_Replace_All_a_Alpha = sentence.replaceAll( 'a', `Alpha`).replaceAll( 'A', `Alpha`);
+console.log(`sentence_Replace_a_Alpha -> ${sentence_Replace_All_a_Alpha}`);
+
+// 3.)
+
+let sentenceName = `HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.`;
+let sentenceNameLength = sentenceName.length;
+console.log(`sentenceName -> ${sentenceName}`);
+console.log(`Length = ${sentenceNameLength}`);
+
+// 4.)
+
+let sentenceNameStartsWith_health = sentenceName.startsWith(`health`);
+console.log(`sentenceName -> ${sentenceName}`);
+console.log(`is ${sentenceName} start with health : ${sentenceNameStartsWith_health}`);
+
+// 5.)
+
+let sentenceNameIncludes_Body = sentenceName.includes(`Body`);
+console.log(`sentenceName -> ${sentenceName}`);
+console.log(`is ${sentenceName} includes body : ${sentenceNameIncludes_Body}`);
+
+// 6.)
+
+let charAt49 = sentenceName.charAt(49);
+console.log(`sentenceName -> ${sentenceName}`);
+console.log(`Character present at index-49 -> ${charAt49}`);
+
+//7.)
+
+let sentenceNameEndsWith_L = sentenceName.endsWith(`L`);
+console.log(`is ${sentenceName} ends with 'L' -> : ${sentenceNameEndsWith_L}`);
+
+//8.)
+
+let sentenceNameIncludes_BodyOnce = sentenceName2.includes(`Body`);
+console.log(`sentenceName -> ${sentenceName2}`);
+console.log(`is ${sentenceName2} includes body : ${sentenceNameIncludes_Body}`);
+
+
+//check if body is there  --> true 
+// remove first body
+//check for body again --> if it exists then there are two or more body else there is only one
